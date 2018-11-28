@@ -1,0 +1,416 @@
+@import "../fonts/poppins-medium/stylesheet.css";
+@import "../fonts/poppins-regular/stylesheet.css";
+@import "../fonts/poppins-light/stylesheet.css";
+@import "../fonts/poppins-semibold/stylesheet.css";
+@import "../fonts/poppins-thin/stylesheet.css";
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'poppinsregular';
+    font-size: 58px;
+}
+
+h2 {
+    font-family: 'poppinssemibold';
+    color: white;
+    font-size: 18px;
+}
+
+h3 {
+    font-family: 'poppinssemibold';
+    font-size: 18px;
+    font-weight: 600px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'poppinssemibold';
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h5 {
+    font-family: 'poppinssemibold';
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'poppinslight';
+    font-size: 14px;
+    color: #777;
+}
+
+/* ===== helpers ===== */
+
+.height-850px {
+    height: 850px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-14 {
+    font-size: 18px;
+}
+
+.font-family-poppins-light {
+    font-family: 'poppinslight';
+}
+
+/* ===== margins ===== */
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-200 {
+    margin-bottom: 200px;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+/* ===== padding =====  */
+
+.pt-125 {
+    padding-top: 125px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-120 {
+    padding-bottom: 120px;
+}
+
+/* ========== */
+
+.def-header {
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 9;
+    background: white;
+}
+
+nav {
+    transition: all 0.3s ease 0s;
+    transform-origin: 100% 50%;
+}
+
+nav.hide {
+    transform: scale(0);
+}
+
+.nav a {
+    text-transform: uppercase;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'poppinsmedium';
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+.menu-bar span {
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.lnr-menu {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        flex-direction: column;
+        text-align: end;
+        top: 75px;
+        right: 15px;
+        z-index: 5;
+        background: #fff;
+    }
+}
+
+#myNav.active {
+    position: fixed;
+    top: 0;
+    width: 100% !important;
+    z-index: 9;
+}
+
+.banner-aria h1,
+.count {
+    text-transform: uppercase;
+    font-weight: 700;
+    background: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+    background: -ms-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.btn {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 30px;
+    padding-right: 60px;
+    line-height: 42px;
+    border-radius: 25px;
+    font-size: 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn span {
+    position: absolute;
+    top: 35%;
+    right: 30px;
+    color: white;
+    font-weight: 700;
+    transition-duration: .5s;
+}
+
+.btn:hover span {
+    right: 20px;
+}
+
+@media (max-width: 991px) {
+    .qwe {
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner-aria {
+        margin-top: 100px;
+        text-align: center;
+    }
+}
+
+.icon .lnr {
+    font-size: 40px;
+}
+
+.about-area {
+    background-color: #222;
+}
+
+.about {
+    border: 1px solid #656463;
+    color: white;
+    outline: none;
+    font-size: 14px;
+    font-family: 'poppinslight';
+}
+
+.about-padding {
+    padding-right: 20%;
+    padding-left: 5%;
+}
+
+@media (max-width: 1280px) {
+    .about-padding {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.gradient {
+    background-image: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+    font-family: 'poppinsmedium';
+}
+
+.top-for-btn span {
+    top: 32%;
+}
+
+.consultans-area {
+    background-color: #f9f9ff;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 80%;
+    opacity: 0;
+    transition: .5s;
+}
+
+a:hover .content-details {
+    top: 40%;
+    opacity: 1;
+}
+
+.item {
+    position: relative;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    background-image: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+    transition: .5s;
+}
+
+.item:hover::before {
+    opacity: .8;
+}
+
+.name {
+    font-family: 'poppinssemibold';
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.post {
+    font-size: 14px;
+}
+
+.count {
+    font-size: 48px;
+}
+
+.count+p {
+    font-size: 24px;
+    font-family: 'poppinsthin';
+}
+
+.f-img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    opacity: .5;
+}
+
+.f-img {
+    transition: all 0.3s ease 0s;
+}
+
+.for-ref a {
+    text-decoration: none;
+}
+
+.bottom {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+.meta {
+    font-family: 'poppinslight';
+    font-size: 14px;
+}
+
+.footer-area {
+    background-color: #222222;
+}
+
+.nav-li {
+    list-style: none;
+    color: #777;
+}
+
+.nav-li a {
+    color: #777;
+    text-decoration: none;
+    font-family: 'poppinslight';
+    font-size: 14px;
+}
+
+.nav-li a:hover {
+    color: #007bff;
+}
+
+.nav-li li {
+    margin-bottom: 5px;
+}
+
+.grad {
+    font-family: 'poppinssemibold';
+    font-size: 24px;
+    background: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.inp-footer {
+    border-radius: 25px;
+    height: 40px;
+    color: black;
+}
+
+@media (max-width: 991px) {
+    .btn-footer {
+        margin-top: 10px;
+    }
+}
+
+.fa-heart {
+    color: #2482ff;
+}
+
+.colorlib a {
+    text-decoration: none;
+}
+
+.colorlib a:hover {
+    color: #2482ff;
+}
+
+.footer-social a {
+    color: #cccccc;
+    background: black;
+    padding: 10px 15px;
+    transition: all .3s ease 0s;
+}
+
+.footer-social a:hover {
+    background: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+}
